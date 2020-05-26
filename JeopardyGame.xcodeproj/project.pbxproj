@@ -14,7 +14,44 @@
 		B0683C0F247B7DAC00900F8E /* JeopardyGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0683C0D247B7DAC00900F8E /* JeopardyGame.xcdatamodeld */; };
 		B0683C11247B7DAF00900F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0683C10247B7DAF00900F8E /* Assets.xcassets */; };
 		B0683C14247B7DAF00900F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0683C12247B7DAF00900F8E /* LaunchScreen.storyboard */; };
+		B0683C1C247B7E0A00900F8E /* QuestionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0683C1B247B7E0A00900F8E /* QuestionLoader.swift */; };
+		B0683C1F247B7E3E00900F8E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0683C1D247B7E3E00900F8E /* Bundle.swift */; };
+		B0683C20247B7E3E00900F8E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0683C1E247B7E3E00900F8E /* Question.swift */; };
+		B0683C24247B7F7900900F8E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0683C23247B7F7900900F8E /* CloudKit.framework */; };
+		B09CCF0A247C3D1700DFD645 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09CCF09247C3D1700DFD645 /* NotificationCenter.framework */; };
+		B09CCF0D247C3D1700DFD645 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09CCF0C247C3D1700DFD645 /* TodayViewController.swift */; };
+		B09CCF10247C3D1700DFD645 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09CCF0E247C3D1700DFD645 /* MainInterface.storyboard */; };
+		B09CCF14247C3D1700DFD645 /* JeopardyGameExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B09CCF08247C3D1700DFD645 /* JeopardyGameExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B09CCF1A247CABF200DFD645 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09CCF19247CABF200DFD645 /* Question.swift */; };
+		B09CCF1C247CAC9100DFD645 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0683C23247B7F7900900F8E /* CloudKit.framework */; };
+		B09CCF1E247CD46600DFD645 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = B09CCF1D247CD46600DFD645 /* questions.json */; };
+		B09CCF20247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B09CCF1F247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf */; };
+		B09CCF21247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B09CCF1F247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B09CCF12247C3D1700DFD645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0683BF9247B7DAC00900F8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09CCF07247C3D1700DFD645;
+			remoteInfo = JeopardyGameExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B09CCF18247C3D1700DFD645 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B09CCF14247C3D1700DFD645 /* JeopardyGameExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0683C01247B7DAC00900F8E /* JeopardyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeopardyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +63,20 @@
 		B0683C10247B7DAF00900F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0683C13247B7DAF00900F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0683C15247B7DAF00900F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0683C1B247B7E0A00900F8E /* QuestionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLoader.swift; sourceTree = "<group>"; };
+		B0683C1D247B7E3E00900F8E /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		B0683C1E247B7E3E00900F8E /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B0683C21247B7F7700900F8E /* JeopardyGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JeopardyGame.entitlements; sourceTree = "<group>"; };
+		B0683C23247B7F7900900F8E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B09CCF08247C3D1700DFD645 /* JeopardyGameExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JeopardyGameExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09CCF09247C3D1700DFD645 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B09CCF0C247C3D1700DFD645 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B09CCF0F247C3D1700DFD645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B09CCF11247C3D1700DFD645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09CCF19247CABF200DFD645 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B09CCF1B247CAC8B00DFD645 /* JeopardyGameExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JeopardyGameExtension.entitlements; sourceTree = "<group>"; };
+		B09CCF1D247CD46600DFD645 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		B09CCF1F247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swiss-911-extra-compr9c22f.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +84,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0683C24247B7F7900900F8E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09CCF05247C3D1700DFD645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09CCF0A247C3D1700DFD645 /* NotificationCenter.framework in Frameworks */,
+				B09CCF1C247CAC9100DFD645 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +103,11 @@
 		B0683BF8247B7DAC00900F8E = {
 			isa = PBXGroup;
 			children = (
+				B09CCF1D247CD46600DFD645 /* questions.json */,
 				B0683C03247B7DAC00900F8E /* JeopardyGame */,
+				B09CCF0B247C3D1700DFD645 /* JeopardyGameExtension */,
 				B0683C02247B7DAC00900F8E /* Products */,
+				B0683C22247B7F7900900F8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B0683C01247B7DAC00900F8E /* JeopardyGame.app */,
+				B09CCF08247C3D1700DFD645 /* JeopardyGameExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +123,7 @@
 		B0683C03247B7DAC00900F8E /* JeopardyGame */ = {
 			isa = PBXGroup;
 			children = (
+				B0683C21247B7F7700900F8E /* JeopardyGame.entitlements */,
 				B0683C04247B7DAC00900F8E /* AppDelegate.swift */,
 				B0683C06247B7DAC00900F8E /* SceneDelegate.swift */,
 				B0683C08247B7DAC00900F8E /* ViewController.swift */,
@@ -66,8 +132,33 @@
 				B0683C12247B7DAF00900F8E /* LaunchScreen.storyboard */,
 				B0683C15247B7DAF00900F8E /* Info.plist */,
 				B0683C0D247B7DAC00900F8E /* JeopardyGame.xcdatamodeld */,
+				B0683C1B247B7E0A00900F8E /* QuestionLoader.swift */,
+				B0683C1D247B7E3E00900F8E /* Bundle.swift */,
+				B0683C1E247B7E3E00900F8E /* Question.swift */,
+				B09CCF1F247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf */,
 			);
 			path = JeopardyGame;
+			sourceTree = "<group>";
+		};
+		B0683C22247B7F7900900F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0683C23247B7F7900900F8E /* CloudKit.framework */,
+				B09CCF09247C3D1700DFD645 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B09CCF0B247C3D1700DFD645 /* JeopardyGameExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B09CCF1B247CAC8B00DFD645 /* JeopardyGameExtension.entitlements */,
+				B09CCF0C247C3D1700DFD645 /* TodayViewController.swift */,
+				B09CCF0E247C3D1700DFD645 /* MainInterface.storyboard */,
+				B09CCF11247C3D1700DFD645 /* Info.plist */,
+				B09CCF19247CABF200DFD645 /* Question.swift */,
+			);
+			path = JeopardyGameExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,15 +171,34 @@
 				B0683BFD247B7DAC00900F8E /* Sources */,
 				B0683BFE247B7DAC00900F8E /* Frameworks */,
 				B0683BFF247B7DAC00900F8E /* Resources */,
+				B09CCF18247C3D1700DFD645 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B09CCF13247C3D1700DFD645 /* PBXTargetDependency */,
 			);
 			name = JeopardyGame;
 			productName = JeopardyGame;
 			productReference = B0683C01247B7DAC00900F8E /* JeopardyGame.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B09CCF07247C3D1700DFD645 /* JeopardyGameExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09CCF15247C3D1700DFD645 /* Build configuration list for PBXNativeTarget "JeopardyGameExtension" */;
+			buildPhases = (
+				B09CCF04247C3D1700DFD645 /* Sources */,
+				B09CCF05247C3D1700DFD645 /* Frameworks */,
+				B09CCF06247C3D1700DFD645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JeopardyGameExtension;
+			productName = JeopardyGameExtension;
+			productReference = B09CCF08247C3D1700DFD645 /* JeopardyGameExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +211,9 @@
 				ORGANIZATIONNAME = figure4software;
 				TargetAttributes = {
 					B0683C00247B7DAC00900F8E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B09CCF07247C3D1700DFD645 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -119,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				B0683C00247B7DAC00900F8E /* JeopardyGame */,
+				B09CCF07247C3D1700DFD645 /* JeopardyGameExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,8 +243,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0683C14247B7DAF00900F8E /* LaunchScreen.storyboard in Resources */,
+				B09CCF1E247CD46600DFD645 /* questions.json in Resources */,
+				B09CCF20247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf in Resources */,
 				B0683C11247B7DAF00900F8E /* Assets.xcassets in Resources */,
 				B0683C0C247B7DAC00900F8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09CCF06247C3D1700DFD645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09CCF21247CE28E00DFD645 /* swiss-911-extra-compr9c22f.ttf in Resources */,
+				B09CCF10247C3D1700DFD645 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,13 +267,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0683C09247B7DAC00900F8E /* ViewController.swift in Sources */,
+				B0683C1F247B7E3E00900F8E /* Bundle.swift in Sources */,
 				B0683C0F247B7DAC00900F8E /* JeopardyGame.xcdatamodeld in Sources */,
 				B0683C05247B7DAC00900F8E /* AppDelegate.swift in Sources */,
+				B0683C1C247B7E0A00900F8E /* QuestionLoader.swift in Sources */,
+				B0683C20247B7E3E00900F8E /* Question.swift in Sources */,
 				B0683C07247B7DAC00900F8E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B09CCF04247C3D1700DFD645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09CCF0D247C3D1700DFD645 /* TodayViewController.swift in Sources */,
+				B09CCF1A247CABF200DFD645 /* Question.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B09CCF13247C3D1700DFD645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09CCF07247C3D1700DFD645 /* JeopardyGameExtension */;
+			targetProxy = B09CCF12247C3D1700DFD645 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B0683C0A247B7DAC00900F8E /* Main.storyboard */ = {
@@ -165,6 +310,14 @@
 				B0683C13247B7DAF00900F8E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B09CCF0E247C3D1700DFD645 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09CCF0F247C3D1700DFD645 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -220,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +440,9 @@
 		B0683C19247B7DAF00900F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JeopardyGame/JeopardyGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XWJ6BAZW;
 				INFOPLIST_FILE = JeopardyGame/Info.plist;
@@ -305,7 +460,9 @@
 		B0683C1A247B7DAF00900F8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JeopardyGame/JeopardyGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35XWJ6BAZW;
 				INFOPLIST_FILE = JeopardyGame/Info.plist;
@@ -315,6 +472,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevenrockarts.JeopardyGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B09CCF16247C3D1700DFD645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JeopardyGameExtension/JeopardyGameExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35XWJ6BAZW;
+				INFOPLIST_FILE = JeopardyGameExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenrockarts.JeopardyGame.JeopardyGameExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B09CCF17247C3D1700DFD645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JeopardyGameExtension/JeopardyGameExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35XWJ6BAZW;
+				INFOPLIST_FILE = JeopardyGameExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenrockarts.JeopardyGame.JeopardyGameExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +536,15 @@
 			buildConfigurations = (
 				B0683C19247B7DAF00900F8E /* Debug */,
 				B0683C1A247B7DAF00900F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09CCF15247C3D1700DFD645 /* Build configuration list for PBXNativeTarget "JeopardyGameExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09CCF16247C3D1700DFD645 /* Debug */,
+				B09CCF17247C3D1700DFD645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

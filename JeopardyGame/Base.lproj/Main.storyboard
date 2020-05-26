@@ -1,24 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="swiss-911-extra-compr9c22f.ttf">
+            <string>Swiss911BT-ExtraCompressed</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JeopardyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WTp-xX-HIz">
+                                <rect key="frame" x="20" y="168" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Swiss911BT-ExtraCompressed" family="Swiss911 XCm BT" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0U-It-oRe">
+                                <rect key="frame" x="20" y="802" width="155" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="emK-qe-HYU"/>
+                                    <constraint firstAttribute="width" constant="155" id="xuL-bE-b5W"/>
+                                </constraints>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnswerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ng9-vg-77e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0j-Yd-CRR">
+                                <rect key="frame" x="239" y="812" width="155" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kgU-64-koL"/>
+                                    <constraint firstAttribute="width" constant="155" id="wP4-t9-0xF"/>
+                                </constraints>
+                                <state key="normal" title="New Question">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newQuestionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUg-fM-UZD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQW-xV-6hr">
+                                <rect key="frame" x="20" y="64" width="374" height="36"/>
+                                <fontDescription key="fontDescription" name="Swiss911BT-ExtraCompressed" family="Swiss911 XCm BT" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qB-yT-qVd">
+                                <rect key="frame" x="20" y="120" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Swiss911BT-ExtraCompressed" family="Swiss911 XCm BT" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statsLabel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK5-PJ-FQd">
+                                <rect key="frame" x="20" y="259" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name="Swiss911BT-ExtraCompressed" family="Swiss911 XCm BT" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6R-xj-Wv7">
+                                <rect key="frame" x="20" y="213.5" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Swiss911BT-ExtraCompressed" family="Swiss911 XCm BT" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V0U-It-oRe" secondAttribute="bottom" constant="20" id="0Xi-lJ-uOn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LQW-xV-6hr" secondAttribute="trailing" constant="20" id="11g-0h-Wpa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4qB-yT-qVd" secondAttribute="trailing" constant="20" id="17F-J8-1JU"/>
+                            <constraint firstItem="vK5-PJ-FQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Ls-i2-Tbf"/>
+                            <constraint firstItem="z6R-xj-Wv7" firstAttribute="top" secondItem="WTp-xX-HIz" secondAttribute="bottom" constant="20" id="6sW-ch-Nlp"/>
+                            <constraint firstItem="4qB-yT-qVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ALc-ry-gU3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WTp-xX-HIz" secondAttribute="trailing" constant="20" id="G8N-bV-ffu"/>
+                            <constraint firstItem="LQW-xV-6hr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NR5-Mq-C9l"/>
+                            <constraint firstItem="WTp-xX-HIz" firstAttribute="top" secondItem="4qB-yT-qVd" secondAttribute="bottom" constant="20" id="PbI-Qs-afh"/>
+                            <constraint firstItem="WTp-xX-HIz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QrQ-F2-2LB"/>
+                            <constraint firstItem="V0U-It-oRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZDa-kK-0tL"/>
+                            <constraint firstItem="LQW-xV-6hr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Zpj-ie-tJB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z6R-xj-Wv7" secondAttribute="trailing" constant="20" id="avA-X1-cIq"/>
+                            <constraint firstItem="vK5-PJ-FQd" firstAttribute="top" secondItem="z6R-xj-Wv7" secondAttribute="bottom" constant="20" id="bp7-Fc-pNh"/>
+                            <constraint firstItem="4qB-yT-qVd" firstAttribute="top" secondItem="LQW-xV-6hr" secondAttribute="bottom" constant="20" id="fRr-PY-Gby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R0j-Yd-CRR" secondAttribute="bottom" constant="20" id="kHj-vs-vHj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R0j-Yd-CRR" secondAttribute="trailing" constant="20" id="kST-6F-N6H"/>
+                            <constraint firstItem="z6R-xj-Wv7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="riH-ab-V6r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vK5-PJ-FQd" secondAttribute="trailing" constant="20" id="zkH-yw-WsU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="z6R-xj-Wv7" id="rwx-Zg-mnM"/>
+                        <outlet property="categoryLabel" destination="LQW-xV-6hr" id="XHR-JL-PAv"/>
+                        <outlet property="questionLabel" destination="WTp-xX-HIz" id="lKA-5A-iT3"/>
+                        <outlet property="statsLabel" destination="vK5-PJ-FQd" id="Kya-PH-piC"/>
+                        <outlet property="valueLabel" destination="4qB-yT-qVd" id="RoO-DR-hIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>
